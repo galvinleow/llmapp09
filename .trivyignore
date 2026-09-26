@@ -1,0 +1,22 @@
+# util-linux: newly surfaced HIGH CVEs on debian:13 (trixie) base image
+# No fix available upstream (status: affected) - suppress until Debian publishes a patch
+CVE-2026-76642
+CVE-2026-78408
+CVE-2026-78409
+CVE-2026-78410
+
+# libacl: symlink traversal privilege escalation via libacl functions
+# No fix available upstream (status: affected) - suppress until Debian publishes a patch
+CVE-2026-54369
+
+# ncurses: buffer overflow vulnerability may lead to arbitrary code execution
+# No fix available upstream (status: affected) - suppress until Debian publishes a patch
+CVE-2025-69720
+
+# systemd-homed: local privilege escalation via missing home-record signature verification
+# No fix available upstream (status: affected) - suppress until Debian publishes a patch
+CVE-2026-16742
+
+# perl-Archive-Tar: DoS via crafted tar header with large entry
+# Debian has deliberately deferred the fix (status: fix_deferred)
+CVE-2026-9538
