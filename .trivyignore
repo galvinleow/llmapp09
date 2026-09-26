@@ -20,3 +20,12 @@ CVE-2026-16742
 # perl-Archive-Tar: DoS via crafted tar header with large entry
 # Debian has deliberately deferred the fix (status: fix_deferred)
 CVE-2026-9538
+
+# False positive: pip's own internal _vendor/vendor.txt build manifest (pinned
+# reference versions for pip's bundled/vendored copies) gets misread by Trivy
+# as installed packages. msgpack==1.1.2/setuptools==70.3.0 here refer to pip's
+# vendoring only (pip's vendored msgpack is used solely for pip's own internal
+# HTTP cache, never imported by our app) - our actual installed msgpack/
+# setuptools (per requirements.txt) are 1.2.2/84.0.0, already patched.
+GHSA-6v7p-g79w-8964
+CVE-2025-47273
